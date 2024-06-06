@@ -1,7 +1,9 @@
 <mat-card>
     <mat-card-header>
-        <h1>Clients</h1>
-        <button (click)="addClient()" mat-raised-button color="primary" style="margin-left: 70%;">Add Client</button>
+        <div class="client-list-header">
+            <h1>Clients</h1>
+            <button (click)="addClient()" mat-raised-button color="primary">Add Client</button>
+        </div>
     </mat-card-header>
     <mat-card-content>
         <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z8">

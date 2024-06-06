@@ -8,3 +8,9 @@ button {
 .mat-mdc-card-content {
     min-height: 327px;
 }
+
+.client-list-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
