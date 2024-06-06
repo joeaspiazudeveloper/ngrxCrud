@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { emptyAction, showAlert } from "./App.action";
+import { emptyAction, showAlert } from "./app.action";
 import { exhaustMap, map } from "rxjs";
 
 @Injectable()

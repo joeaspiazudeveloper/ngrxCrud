@@ -16,7 +16,7 @@ import {
   updateClientSuccess,
 } from './client.action';
 import { catchError, exhaustMap, map, of, switchMap } from 'rxjs';
-import { showAlert } from '../Common/App.action';
+import { showAlert } from '../Common/app.action';
 
 @Injectable()
 export class ClientEffects {
