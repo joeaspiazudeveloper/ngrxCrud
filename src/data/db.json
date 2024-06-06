@@ -1,0 +1,78 @@
+{
+  "clients": [
+    {
+      "id": "1",
+      "name": "Dennys Andres",
+      "email": "dandresh@gmail.com",
+      "phone": "899089898",
+      "address": "No 2\nRamraj street, chennai\nIndai",
+      "status": true
+    },
+    {
+      "id": "2",
+      "name": "Oscar Segovia",
+      "email": "oseg@in.com",
+      "phone": "899089898",
+      "address": "No 2\nRamraj street, Delhi\nIndai",
+      "status": true
+    },
+    {
+      "id": "3",
+      "name": "Don Alfre",
+      "email": "donalfre@inc.com",
+      "phone": "8990898113",
+      "address": "Portete y tirate al pozo",
+      "status": false
+    },
+    {
+      "id": "4",
+      "name": "Sebastian Ludenia",
+      "email": "sludenia@in.com",
+      "phone": "78899229",
+      "address": "no 2 this street",
+      "status": true
+    },
+    {
+      "id": "6",
+      "name": "Akbar",
+      "email": "test@in.com",
+      "phone": "33333",
+      "associategroup": "level1",
+      "address": "test",
+      "type": "CUSTOMER",
+      "status": true
+    },
+    {
+      "id": "7",
+      "name": "Test Name",
+      "email": "testname@asd.com",
+      "phone": "34343434333",
+      "address": "main street EC",
+      "status": true
+    },
+    {
+      "id": "1",
+      "name": "Dennys Andres",
+      "email": "dandresh@gmail.com",
+      "phone": "899089898",
+      "address": "No 2\nRamraj street, chennai\nIndai",
+      "status": true
+    },
+    {
+      "id": null,
+      "name": "next client",
+      "email": "nextc@asd.com",
+      "phone": "12312333",
+      "address": "asdasdasdasd",
+      "status": true
+    },
+    {
+      "id": "1",
+      "name": "Dennys Andres Aspiazu",
+      "email": "dandresh@gmail.com",
+      "phone": "899089898",
+      "address": "No 2\nRamraj street, chennai\nIndai",
+      "status": true
+    }
+  ]
+}
