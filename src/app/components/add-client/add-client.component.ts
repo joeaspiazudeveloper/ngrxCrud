@@ -14,7 +14,6 @@ import { Client } from 'src/app/Store/Model/client.model';
 export class AddClientComponent implements OnInit {
   
   title="Create Client"
-  isEdited = false;
   dialogData: any;
 
   clientForm = this.builder.group({

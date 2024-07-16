@@ -17,10 +17,12 @@ import { MatSort } from '@angular/material/sort';
 export class ClientListComponent implements OnInit {
   clientList!: Client[];
   dataSource: any;
+  showLoading = true;
+
   @ViewChild(MatPaginator) paginator!:MatPaginator;
   @ViewChild(MatSort) sort!:MatSort;
   
-  displayedColumns: string[] = ["id", "name", "email", "phone", "address", "status", "action"]
+  displayedColumns: string[] = ["id", "name", "email", "phone", "address", "status", "action"];
 
   constructor(private dialog: MatDialog, private store: Store) {}
 
@@ -28,6 +30,9 @@ export class ClientListComponent implements OnInit {
     this.store.dispatch(loadClient());
     this.store.select(getClientList).subscribe((data) => {
       this.clientList = data;
+      if(this.clientList.length > 0) {
+        this.showLoading = false;
+      }
       this.dataSource = new MatTableDataSource<Client>(this.clientList);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;

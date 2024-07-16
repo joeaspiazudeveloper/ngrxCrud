@@ -16,6 +16,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ClientReducer } from './Store/Client/client.reducer';
 import { ClientEffects } from './Store/Client/client.effects';
 import { AppEffects } from './Store/Common/app.effects';
+import { LoaderComponent } from "./components/loader/loader.component";
 
 @NgModule({
   declarations: [
@@ -30,11 +31,12 @@ import { AppEffects } from './Store/Common/app.effects';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    StoreModule.forRoot({client: ClientReducer}),
+    StoreModule.forRoot({ client: ClientReducer }),
     EffectsModule.forRoot([ClientEffects, AppEffects]),
     // StoreRouterConnectingModule.forRoot(),
-    StoreDevtoolsModule.instrument({ maxAge: 35, logOnly: !isDevMode })
-  ],
+    StoreDevtoolsModule.instrument({ maxAge: 35, logOnly: !isDevMode }),
+    LoaderComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })
