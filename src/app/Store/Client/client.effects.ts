@@ -28,7 +28,6 @@ export class ClientEffects {
       exhaustMap((action) => {
         return this.clientService.getAll().pipe(
           map((data) => {
-            console.log(data);
             return loadClientSuccess({ list: data });
           }),
           catchError((_error) =>

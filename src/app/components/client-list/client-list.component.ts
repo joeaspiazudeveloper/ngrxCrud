@@ -12,12 +12,18 @@ import { MatCardModule } from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { LoaderComponent } from "../loader/loader.component";
 import { MatTableModule } from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @Component({
   selector: 'app-client-list',
   standalone: true,
-  imports: [MatCardModule, MatPaginatorModule, LoaderComponent, MatTableModule],
+  imports: [MatCardModule, 
+    MatPaginatorModule, 
+    LoaderComponent, 
+    MatTableModule,
+    MatButtonModule
+  ],
   templateUrl: './client-list.component.html',
   styleUrls: ['./client-list.component.scss'],
 })

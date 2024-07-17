@@ -9,7 +9,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -17,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   selector: 'app-add-client',
   standalone: true,
   imports: [MatCardModule, MatCheckboxModule, 
-    MatFormFieldModule, ReactiveFormsModule],
+    MatFormFieldModule, ReactiveFormsModule, 
+    MatInputModule, MatSelectModule, MatButtonModule],
   templateUrl: './add-client.component.html',
   styleUrls: ['./add-client.component.scss'],
 })
