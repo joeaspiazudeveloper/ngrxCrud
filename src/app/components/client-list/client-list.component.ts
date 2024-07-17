@@ -8,14 +8,21 @@ import { deleteClient, loadClient, loadClientbyId, openPopup } from 'src/app/Sto
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { LoaderComponent } from "../loader/loader.component";
+import { MatTableModule } from '@angular/material/table';
+
 
 @Component({
   selector: 'app-client-list',
+  standalone: true,
+  imports: [MatCardModule, MatPaginatorModule, LoaderComponent, MatTableModule],
   templateUrl: './client-list.component.html',
   styleUrls: ['./client-list.component.scss'],
 })
 export class ClientListComponent implements OnInit {
-  clientList!: Client[];
+  clientList: Client[] = [];
   dataSource: any;
   showLoading = true;
 

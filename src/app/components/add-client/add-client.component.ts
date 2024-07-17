@@ -5,9 +5,19 @@ import { Store } from '@ngrx/store';
 import { addClient, loadClientbyId, updateClient } from 'src/app/Store/Client/client.action';
 import { getClientById } from 'src/app/Store/Client/client.selector';
 import { Client } from 'src/app/Store/Model/client.model';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+
 
 @Component({
   selector: 'app-add-client',
+  standalone: true,
+  imports: [MatCardModule, MatCheckboxModule, 
+    MatFormFieldModule, ReactiveFormsModule],
   templateUrl: './add-client.component.html',
   styleUrls: ['./add-client.component.scss'],
 })
