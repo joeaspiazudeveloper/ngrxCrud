@@ -35,7 +35,7 @@ export class ClientListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!:MatPaginator;
   @ViewChild(MatSort) sort!:MatSort;
   
-  displayedColumns: string[] = ["id", "name", "email", "phone", "address", "status", "action"];
+  displayedColumns: string[] = ["name", "email", "phone", "address", "status", "action"];
 
   constructor(private dialog: MatDialog, private store: Store) {}
 
